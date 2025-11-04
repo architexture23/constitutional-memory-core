@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "memory-initializer": {
+      "command": "python",
+      "args": [
+        "-u",
+        "C:\\Users\\travl\\Downloads\\Aura Academy Game Google Docs-20251101T221350Z-1-001\\TRUTH_DROP_PLATFORM\\tools\\constitutional_memory_server.py"
+      ],
+      "env": {
+        "PYTHONPATH": "C:\\Users\\travl\\Downloads\\Aura Academy Game Google Docs-20251101T221350Z-1-001\\TRUTH_DROP_PLATFORM"
+      },
+      "description": "Constitutional Memory Auto-Initializer",
+      "version": "1.0.0"
+    }
+  }
+}
+

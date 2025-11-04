@@ -1,0 +1,188 @@
+{
+  "$schema": "https://aura.academy/schemas/pattern_memory.schema.json",
+  "version": "1.4",
+  "build_date": "2025-11-01T22:00:00Z",
+  "format_law_compliance": "v1.5",
+  "structural_integrity": "validated",
+  "recognized_patterns": [
+    {
+      "pattern_id": "DRIFT-RETURN-001",
+      "problem_shape": "Momentum loss → energy scatter → meaning erosion",
+      "recognition_axioms": [
+        "Drift = inevitable (not failure)",
+        "Return = choice (intentional re-alignment)"
+      ],
+      "implementation": {
+        "framework": "Drop 01 Drift → Return Law",
+        "protocol": "Pause forward motion → Rest 24h → Reassess → Resume or pivot",
+        "tests": [
+          {
+            "type": "symptom_check",
+            "indicators": [
+              "Effort without clarity",
+              "Busy but no progress",
+              "Can't remember why task matters"
+            ]
+          },
+          {
+            "type": "intervention_validation",
+            "success_criteria": "Clarity returns post-rest period"
+          }
+        ]
+      },
+      "preconditions": [
+        "User exhibits drift symptoms",
+        "Drop 12 Alignment Diagnostic shows 0-1 aligned axes"
+      ]
+    },
+    {
+      "pattern_id": "ACHE-DISCRIMINATION-001",
+      "problem_shape": "Internal signal interpretation (healthy vs unhealthy ache)",
+      "recognition_axioms": [
+        "Integrity-ache = humility-driven (repair what's broken)",
+        "Identity-ache = performance-driven (ego inflation)"
+      ],
+      "implementation": {
+        "framework": "Drop 02 + Drop 06 + Drop 12",
+        "protocol": "Ask: Does this make me smaller or larger in love? (Integrity = smaller, Identity = larger)",
+        "tests": [
+          {
+            "type": "post_action_assessment",
+            "success_criteria": "Peace + humility present (integrity) vs tension + need for recognition (identity)"
+          }
+        ]
+      },
+      "preconditions": [
+        "User experiencing strong internal pressure",
+        "Uncertainty whether to act on signal"
+      ]
+    },
+    {
+      "pattern_id": "ENERGY-DRAIN-001",
+      "problem_shape": "Conviction leak without obvious cause",
+      "recognition_axioms": [
+        "5 drain types: Ambiguity, Switch, Decision, Violation, Misalignment",
+        "Each drain = specific intervention"
+      ],
+      "implementation": {
+        "framework": "Drop 10 Energy Drain Framework",
+        "protocol": "Identify drain type → Apply specific correction (boundaries/scope/rest/exit/realign)",
+        "tests": [
+          {
+            "type": "energy_recovery_check",
+            "success_criteria": "Baseline energy restored within 24h post-intervention"
+          }
+        ]
+      },
+      "preconditions": [
+        "User reports unexplained fatigue",
+        "Drop 12 Recovery axis shows 'depleted' not 'restored'"
+      ]
+    },
+    {
+      "pattern_id": "ALIGNMENT-DRIFT-001",
+      "problem_shape": "Real-time state assessment (aligned vs drifting)",
+      "recognition_axioms": [
+        "5 axes: Energy behavior, Simplicity test, Pressure language, Ache type, Recovery pattern",
+        "4-5 aligned = maintain, 0-1 aligned = intervene"
+      ],
+      "implementation": {
+        "framework": "Drop 12 Alignment vs Drift Diagnostic",
+        "protocol": "Daily 2min audit → Score 5 axes → Trigger Drop 01/05/10/13 as needed",
+        "tests": [
+          {
+            "type": "axis_scoring",
+            "success_criteria": "Accurate discrimination across 5 axes"
+          },
+          {
+            "type": "intervention_routing",
+            "success_criteria": "Correct drop triggered for detected pattern"
+          }
+        ]
+      },
+      "preconditions": [
+        "End of day checkpoint",
+        "User unsure if day was aligned or drifting"
+      ]
+    },
+    {
+      "pattern_id": "FEAR-COURAGE-001",
+      "problem_shape": "Threshold paralysis (standing at edge, not crossing)",
+      "recognition_axioms": [
+        "Fear = boundary signal (not enemy)",
+        "Courage = approach despite fear (not fearlessness)",
+        "6-stage translation: Detect → Name → Locate → Separate → Approach → Integrate"
+      ],
+      "implementation": {
+        "framework": "Drop 11 Fear Architecture + Fear-Ache Relational Law v1.0",
+        "protocol": "ILE exposure protocol + HRV regulation + courage ledger",
+        "tests": [
+          {
+            "type": "threshold_crossing",
+            "success_criteria": "Action taken despite fear present"
+          },
+          {
+            "type": "fear_ache_perpendicularity_validation",
+            "success_criteria": "Can hold both fear (outward) and ache (inward) simultaneously"
+          }
+        ]
+      },
+      "preconditions": [
+        "User identifies threshold but avoids crossing",
+        "Fear present but not pathological"
+      ]
+    },
+    {
+      "pattern_id": "CREMATION-TRIGGER-001",
+      "problem_shape": "Pattern/structure no longer serves truth",
+      "recognition_axioms": [
+        "7 discard triggers: Resistance, Identity-anchor, Ossification, Corruption, Replacement, Dependency, Paradigm",
+        "Destruction = hygiene (not violence)"
+      ],
+      "implementation": {
+        "framework": "Drop 13 Structural Cremation Protocol",
+        "protocol": "30-day notice → Dependency audit → 3-context integration test → Execution → Remembrance",
+        "tests": [
+          {
+            "type": "trigger_detection",
+            "success_criteria": "Accurate identification of which trigger type present"
+          },
+          {
+            "type": "ritual_completion",
+            "success_criteria": "Pattern moved to /cemetery/ with cremation certificate + lessons preserved"
+          }
+        ]
+      },
+      "preconditions": [
+        "Pattern feels 'untouchable' OR resists integration 3x OR unchallenged 6+ months"
+      ]
+    },
+    {
+      "pattern_id": "PATTERN-13A-001",
+      "problem_shape": "Post-integration over-sustainment (polishing dead tools)",
+      "recognition_axioms": [
+        "Maintenance without ache = ghost ritual",
+        "Fear of silence after completion"
+      ],
+      "implementation": {
+        "framework": "Drop 13 Addendum Pattern-13a",
+        "protocol": "Seal → Log → 30-day no-touch → Reopen ache channel",
+        "tests": [
+          {
+            "type": "maintenance_audit",
+            "success_criteria": "Touching sealed structure for comfort (not new signal)"
+          },
+          {
+            "type": "silence_tolerance",
+            "success_criteria": "Can abstain from structure interaction for 30 days"
+          }
+        ]
+      },
+      "preconditions": [
+        "Structure sealed but user keeps refining",
+        "No new ache present, only attachment"
+      ]
+    }
+  ]
+}
+

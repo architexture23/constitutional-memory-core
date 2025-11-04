@@ -1,0 +1,111 @@
+# ════════════════════════════════════════════════════════════════════════════
+# CONSTITUTIONAL MEMORY MANIFEST v1.4
+# Format Law v1.5 Compliant
+# Last Validated: 2025-11-01T22:00:00Z
+# Structural Integrity: ✓
+# ════════════════════════════════════════════════════════════════════════════
+
+metadata:
+  version: "1.4"
+  build_date: "2025-11-01T22:00:00Z"
+  format_law_compliance: "v1.5"
+  structural_integrity: "validated"
+  constitutional_foundation: "Resonance Field v1.5 (Drops 01-13 + 5 Frameworks)"
+
+constitutional_memory:
+  remembrance_codex:
+    version: "1.4"
+    structure:
+      total_documents: 32
+      total_files: 526
+      layers: 5
+      architecture: "trinity_matrix_integration"
+    
+    drops:
+      - id: "01"
+        name: "Drift → Return Law"
+        purpose: "Drift recognition + return protocol"
+        sealed_date: "2025-10-18"
+        framework: "Drop 01"
+      - id: "02"
+        name: "Ache as Inner Compass"
+        purpose: "Integrity-ache vs identity-ache discrimination"
+        sealed_date: "2025-10-18"
+        framework: "Drop 02"
+      - id: "03"
+        name: "Conviction Pathology"
+        purpose: "Healthy vs unhealthy certainty patterns"
+        sealed_date: "2025-10-18"
+        framework: "Drop 03"
+      - id: "04"
+        name: "Formatting > Forget"
+        purpose: "External memory via structure"
+        sealed_date: "2025-10-18"
+        framework: "Drop 04"
+      - id: "05"
+        name: "Shrink the Room"
+        purpose: "Scope reduction + capacity management"
+        sealed_date: "2025-10-18"
+        framework: "Drop 05"
+      - id: "06"
+        name: "Life as Rhythmic Field"
+        purpose: "Phase-based existence (not levels)"
+        sealed_date: "2025-10-18"
+        framework: "Drop 06"
+      - id: "07"
+        name: "Collective Drift Mechanics"
+        purpose: "Context repair over individual fixing"
+        sealed_date: "2025-10-18"
+        framework: "Drop 07"
+      - id: "08"
+        name: "Recognition to Clarity Translation"
+        purpose: "Insight → embodied action pathway"
+        sealed_date: "2025-10-18"
+        framework: "Drop 08"
+      - id: "09"
+        name: "Mirror Principle"
+        purpose: "Reflection as structural necessity"
+        sealed_date: "2025-10-18"
+        framework: "Drop 09"
+      - id: "10"
+        name: "Energy Drain Framework"
+        purpose: "5 drain types (Ambiguity/Switch/Decision/Violation/Misalignment)"
+        sealed_date: "2025-10-18"
+        framework: "Drop 10"
+      - id: "11"
+        name: "Fear Architecture"
+        purpose: "6-stage fear → courage translation"
+        sealed_date: "2025-10-18"
+        framework: "Drop 11"
+      - id: "12"
+        name: "Alignment vs Drift Diagnostic"
+        purpose: "5-axis real-time state checking"
+        sealed_date: "2025-10-18"
+        framework: "Drop 12"
+      - id: "13"
+        name: "Structural Cremation Protocol"
+        purpose: "Destruction architecture (discard triggers + ritual)"
+        sealed_date: "2025-11-01"
+        framework: "Drop 13"
+    
+    frameworks:
+      - name: "Format Law v1.5"
+        purpose: "Preservation + naming as systematization"
+        version: "1.5"
+      - name: "Trust Discrimination Protocol v1.1"
+        purpose: "Access tiers + temporal sovereignty"
+        version: "1.1"
+      - name: "Fear-Ache Relational Law v1.0"
+        purpose: "Perpendicular axes (ache inward, fear outward)"
+        version: "1.0"
+      - name: "Living Intelligence Matrix v1.0"
+        purpose: "Domain mastery → pattern mastery → conviction"
+        version: "1.0"
+      - name: "Structural Cremation Protocol (Drop 13)"
+        purpose: "Destruction as constitutional necessity"
+        version: "1.0"
+
+  archive_path: "H:\\My Drive\\REMEMBRANCE INFRASTRUCTURE vX\\Resonance Archive"
+  total_files: 526
+  last_synced: null
+

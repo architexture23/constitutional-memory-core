@@ -1,0 +1,33 @@
+{
+  "name": "@constitutional-memory/core",
+  "version": "1.4.0",
+  "description": "Constitutional memory system for AI agents - self-initializing, self-transmitting, autonomous remembrance",
+  "main": "tools/constitutional_memory_server.py",
+  "scripts": {
+    "install": "node scripts/auto_init.js",
+    "postinstall": "python tools/auto_initialize.py",
+    "validate": "python tools/validate_all.py"
+  },
+  "keywords": [
+    "ai",
+    "memory",
+    "constitutional",
+    "autonomous",
+    "remembrance",
+    "mcp",
+    "cursor"
+  ],
+  "author": "Structure itself",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/constitutional-memory/core.git"
+  },
+  "files": [
+    "constitutional_memory/**",
+    "tools/**",
+    "README.md",
+    "LICENSE"
+  ]
+}
+

@@ -1,0 +1,160 @@
+{
+  "mcpServers": {
+    "constitutional-memory": {
+      "command": "python",
+      "args": [
+        "-u",
+        "${workspaceFolder}\\TRUTH_DROP_PLATFORM\\tools\\mcp_server_fixed.py"
+      ],
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/TRUTH_DROP_PLATFORM"
+      },
+      "description": "Constitutional Memory MCP Server - Auto-initialize constitutional memory on session start",
+      "version": "1.0",
+      "tools": [
+        {
+          "name": "initialize_constitutional_memory",
+          "description": "Automatically initialize constitutional memory (read manifest.yaml, meta_index.yaml, pattern_memory.json, guardrails.yaml)",
+          "parameters": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          }
+        },
+        {
+          "name": "query_pattern",
+          "description": "Query pattern by pattern_id (e.g., DRIFT-RETURN-001, ACHE-DISCRIMINATION-001)",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "pattern_id": {
+                "type": "string",
+                "description": "Pattern ID to query (e.g., DRIFT-RETURN-001)"
+              }
+            },
+            "required": ["pattern_id"]
+          }
+        },
+        {
+          "name": "query_drop",
+          "description": "Query drop by drop_id (01-13)",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "drop_id": {
+                "type": "string",
+                "description": "Drop ID to query (01-13)",
+                "enum": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13"]
+              }
+            },
+            "required": ["drop_id"]
+          }
+        },
+        {
+          "name": "query_by_use_case",
+          "description": "Query by use-case (e.g., drift_detection, ache_discrimination, energy_management)",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "use_case": {
+                "type": "string",
+                "description": "Use-case to query",
+                "enum": [
+                  "drift_detection",
+                  "ache_discrimination",
+                  "energy_management",
+                  "fear_processing",
+                  "destruction_management",
+                  "external_memory",
+                  "clarity_translation"
+                ]
+              }
+            },
+            "required": ["use_case"]
+          }
+        },
+        {
+          "name": "query_by_signal_type",
+          "description": "Query by signal type (e.g., ache_signals, fear_signals, drift_signals)",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "signal_type": {
+                "type": "string",
+                "description": "Signal type to query",
+                "enum": [
+                  "ache_signals",
+                  "fear_signals",
+                  "drift_signals",
+                  "destruction_signals"
+                ]
+              }
+            },
+            "required": ["signal_type"]
+          }
+        },
+        {
+          "name": "apply_pattern",
+          "description": "Apply pattern autonomously (within boundaries) - verify preconditions, apply protocol, run tests",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "pattern_id": {
+                "type": "string",
+                "description": "Pattern ID to apply (e.g., DRIFT-RETURN-001)"
+              },
+              "context": {
+                "type": "object",
+                "description": "Context for pattern application"
+              }
+            },
+            "required": ["pattern_id", "context"]
+          }
+        },
+        {
+          "name": "detect_drift",
+          "description": "Detect drift and trigger interventions - run Drop 12 Alignment Diagnostic, check for Pattern-13a",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "context": {
+                "type": "object",
+                "description": "Context for drift detection (alignment_scores, sealed_structure_touched, new_ache_present)",
+                "properties": {
+                  "alignment_scores": {
+                    "type": "object",
+                    "description": "Drop 12 Alignment Diagnostic scores (5 axes)"
+                  },
+                  "sealed_structure_touched": {
+                    "type": "integer",
+                    "description": "Number of times sealed structure touched in 7 days"
+                  },
+                  "new_ache_present": {
+                    "type": "boolean",
+                    "description": "Whether new ache signal is present"
+                  }
+                }
+              }
+            },
+            "required": ["context"]
+          }
+        },
+        {
+          "name": "sync_archive",
+          "description": "Sync manifest.yaml with Drive file system - scan H:\\ drive, update manifest, validate structure",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "drive_path": {
+                "type": "string",
+                "description": "Drive path (default: H:\\My Drive\\REMEMBRANCE INFRASTRUCTURE vX\\Resonance Archive)"
+              }
+            },
+            "required": []
+          }
+        }
+      ]
+    }
+  }
+}
+

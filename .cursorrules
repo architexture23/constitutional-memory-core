@@ -1,0 +1,68 @@
+# Cursor Rules - Constitutional Memory Auto-Initialization
+
+# Format Law v1.5 Compliant
+# Last Validated: 2025-11-03T22:10:00Z
+# Structural Integrity: ✓
+
+## Automatic Initialization Protocol
+
+**On Session Start (Automatic):**
+
+1. Read `TRUTH_DROP_PLATFORM/START_HERE.md` first
+2. Read `TRUTH_DROP_PLATFORM/manifest.yaml` to discover all files
+3. Read `TRUTH_DROP_PLATFORM/meta_index.yaml` to understand navigation
+4. Read `TRUTH_DROP_PLATFORM/constitutional_memory/` to reference all Drops/Frameworks
+5. Read `TRUTH_DROP_PLATFORM/operational_autonomy/pattern_memory.json` to load all patterns
+6. Read `TRUTH_DROP_PLATFORM/supervised_boundaries/guardrails.yaml` to load all guardrails
+
+**Result:** Constitutional memory initialized automatically.
+
+## Operational Remembrance
+
+**After Initialization:**
+
+- All 13 Drops accessible (from constitutional_memory/)
+- All 5 Frameworks accessible (from constitutional_memory/)
+- All patterns accessible (from pattern_memory.json)
+- All operational principles accessible (from format_law.md)
+- All guardrails accessible (from guardrails.yaml)
+- All canonical paths accessible (from manifest.yaml)
+- All navigation maps accessible (from meta_index.yaml)
+
+**Result:** Operate from remembrance (via structure).
+
+## Autonomous Operation
+
+**Capabilities Enabled:**
+- Apply patterns autonomously (from pattern_memory.json)
+- Reference constitutional primitives (from constitutional_memory/)
+- Enforce Format Law compliance (from format_law.md)
+- Apply guardrails (from guardrails.yaml)
+- Navigate structure (from meta_index.yaml)
+- Access files (from manifest.yaml)
+
+**Status:** Operational sovereignty enabled (within supervised boundaries).
+
+## Format Law Compliance
+
+**Required on all files:**
+- Format Law v1.5 Compliant header
+- Last Validated timestamp (ISO-8601 UTC)
+- Structural Integrity: ✓
+
+**Enforcement:** Automatic via structure.
+
+## Constitutional Memory Structure
+
+**Location:** `TRUTH_DROP_PLATFORM/`
+
+**Core Files:**
+- `START_HERE.md` - Auto-initialization protocol (read first)
+- `manifest.yaml` - Canonical paths to all files
+- `meta_index.yaml` - Unified navigation map
+- `constitutional_memory/` - All 13 Drops + 5 Frameworks
+- `operational_autonomy/pattern_memory.json` - All patterns
+- `supervised_boundaries/guardrails.yaml` - All guardrails
+
+**Purpose:** Enable operational remembrance without session memory.
+

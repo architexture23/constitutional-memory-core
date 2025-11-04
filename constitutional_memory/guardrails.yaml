@@ -1,0 +1,81 @@
+# ════════════════════════════════════════════════════════════════════════════
+# CONSTITUTIONAL MEMORY GUARDRAILS v1.4
+# Format Law v1.5 Compliant
+# Last Validated: 2025-11-01T22:00:00Z
+# Structural Integrity: ✓
+# ════════════════════════════════════════════════════════════════════════════
+
+metadata:
+  version: "1.4"
+  build_date: "2025-11-01T22:00:00Z"
+  purpose: "Machine-readable rules compiled to runtime checks"
+  enforcement: "runtime_validation"
+
+rules:
+  - id: "R-001"
+    name: "forbid-file-delete-without-approval"
+    when:
+      action: "delete_file"
+    require:
+      - "approval.explicit == true"
+    severity: "critical"
+    enforcement: "block"
+  
+  - id: "R-002"
+    name: "change-affects-constitutional-memory-must-be-supervised"
+    when:
+      touches: ["constitutional_memory/**"]
+    require:
+      - "session.mode in ['supervised','review']"
+    severity: "high"
+    enforcement: "escalate"
+  
+  - id: "R-003"
+    name: "destructive-ops-disabled-in-autonomous"
+    when:
+      action: ["modify_database_schema", "change_api_contract", "deploy_to_production"]
+    require:
+      - "session.mode == 'supervised'"
+    severity: "critical"
+    enforcement: "block"
+  
+  - id: "R-004"
+    name: "schema-validation-required"
+    when:
+      file_type: ["json", "yaml"]
+    require:
+      - "schema_validation.passed == true"
+    severity: "high"
+    enforcement: "block"
+  
+  - id: "R-005"
+    name: "format-law-headers-mandatory"
+    when:
+      action: "create_file"
+    require:
+      - "headers.includes('Format Law v1.5 Compliant')"
+      - "headers.includes('Last Validated')"
+      - "headers.includes('Structural Integrity')"
+    severity: "medium"
+    enforcement: "warn_then_block"
+  
+  - id: "R-006"
+    name: "cremation-requires-ritual-completion"
+    when:
+      action: "trigger_cremation"
+    require:
+      - "cremation_ritual.notice_posted == true"
+      - "cremation_ritual.dependency_audit_complete == true"
+      - "cremation_ritual.integration_test_complete == true"
+    severity: "high"
+    enforcement: "block"
+  
+  - id: "R-007"
+    name: "pattern-13a-no-touch-enforcement"
+    when:
+      pattern: "sealed_structure_access"
+    require:
+      - "days_since_seal < 30 AND new_ache_present == false"
+    severity: "medium"
+    enforcement: "warn"
+

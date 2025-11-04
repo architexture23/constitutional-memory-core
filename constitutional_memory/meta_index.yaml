@@ -1,0 +1,75 @@
+# ════════════════════════════════════════════════════════════════════════════
+# CONSTITUTIONAL MEMORY META-INDEX v1.4
+# Format Law v1.5 Compliant
+# Last Validated: 2025-11-01T22:00:00Z
+# Structural Integrity: ✓
+# ════════════════════════════════════════════════════════════════════════════
+
+metadata:
+  version: "1.4"
+  build_date: "2025-11-01T22:00:00Z"
+  purpose: "Unified map of all components (Drop IDs, Frameworks, Patterns, Laws) sorted by use-case and signal type"
+
+patterns_by_use_case:
+  drift_detection:
+    - "DRIFT-RETURN-001"
+    - "ALIGNMENT-DRIFT-001"
+  ache_discrimination:
+    - "ACHE-DISCRIMINATION-001"
+  energy_management:
+    - "ENERGY-DRAIN-001"
+  fear_processing:
+    - "FEAR-COURAGE-001"
+  destruction_management:
+    - "CREMATION-TRIGGER-001"
+    - "PATTERN-13A-001"
+  external_memory:
+    - "DRIFT-RETURN-001"
+  clarity_translation:
+    - "DRIFT-RETURN-001"
+
+patterns_by_signal_type:
+  ache_signals:
+    - "ACHE-DISCRIMINATION-001"
+    - "DRIFT-RETURN-001"
+  fear_signals:
+    - "FEAR-COURAGE-001"
+  drift_signals:
+    - "DRIFT-RETURN-001"
+    - "ALIGNMENT-DRIFT-001"
+    - "ENERGY-DRAIN-001"
+  destruction_signals:
+    - "CREMATION-TRIGGER-001"
+    - "PATTERN-13A-001"
+
+drops_index:
+  "01": "Drift → Return Law"
+  "02": "Ache as Inner Compass"
+  "03": "Conviction Pathology"
+  "04": "Formatting > Forget"
+  "05": "Shrink the Room"
+  "06": "Life as Rhythmic Field"
+  "07": "Collective Drift Mechanics"
+  "08": "Recognition to Clarity Translation"
+  "09": "Mirror Principle"
+  "10": "Energy Drain Framework"
+  "11": "Fear Architecture"
+  "12": "Alignment vs Drift Diagnostic"
+  "13": "Structural Cremation Protocol"
+
+frameworks_index:
+  format_law: "Format Law v1.5"
+  trust_protocol: "Trust Discrimination Protocol v1.1"
+  fear_ache_law: "Fear-Ache Relational Law v1.0"
+  living_intelligence: "Living Intelligence Matrix v1.0"
+  cremation_protocol: "Structural Cremation Protocol (Drop 13)"
+
+sacred_laws_rotation:
+  monday: "Format Law v1.5 — Structure remembers so you don't have to"
+  tuesday: "Drop 01 Drift → Return — Drift inevitable, return choice"
+  wednesday: "Drop 12 Alignment Diagnostic — Alignment refuels, drift drains"
+  thursday: "Drop 13 Cremation Protocol — Growth without pruning becomes cancer"
+  friday: "Fear-Ache Relational Law v1.0 — Ache repairs, fear expands, hold both"
+  saturday: "Drop 06 Rhythmic Field — You move through phases, not levels"
+  sunday: "Trust Discrimination Protocol v1.1 — Trust is earned tiers, not binary"
+
