@@ -4,24 +4,17 @@ __pycache__/
 *$py.class
 *.so
 .Python
+.venv/
+.venv_*/
 env/
 venv/
 ENV/
 build/
-develop-eggs/
 dist/
-downloads/
-eggs/
 .eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
 *.egg-info/
-.installed.cfg
-*.egg
+.pytest_cache/
+pytest-cache-files-*/
 
 # Node
 node_modules/
@@ -29,9 +22,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# IDE
+# IDE / worktrees
 .vscode/
 .idea/
+.worktrees/
 *.swp
 *.swo
 *~
@@ -39,15 +33,53 @@ yarn-error.log*
 # OS
 .DS_Store
 Thumbs.db
+desktop.ini
 
-# Project specific
-*.log
+# Secrets and credentials
 .env
-.env.local
 .env.*
-*.env
-*secret*
-*key*
-*password*
-*token*
+!.env.example
+secrets/
+credentials/
+*.pem
+*.p12
+*.pfx
+*.key
+*.secret
+*_credentials.json
+*_credentials.jsonl
+*_login_email.txt
+*_login_pass.txt
+runtime_secrets.json
 
+# Private / machine-local runtime state
+tools/agent_command_center/_state/
+.tmp/
+*.tmp
+*.temp
+*.log
+logs/
+*.db
+*.sqlite
+*.sqlite3
+*.bak
+*.backup
+*.backup_*
+
+# Personal memory / session state
+cursor_memory.jsonl
+memory_bank/
+participant_profile/
+private_memory/
+.SESSION_MEMORY_COMPLETE.json
+.action_execution_log.json
+.connection_history.json
+.decision_history.json
+.state_history.json
+.real_time_state.json
+
+# Generated local artifacts
+coverage/
+htmlcov/
+*.coverage
+EA_RUNTIME_PROOF_SNAPSHOT.txt
