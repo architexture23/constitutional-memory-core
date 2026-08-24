@@ -4,7 +4,7 @@ Constitutional Memory Core is an evolving architecture for durable AI-agent memo
 
 > **Public status (2026-08-24): `VERIFYING` — not `DELIVERED`.**
 
-This repository began as the public **Constitutional Memory v1.4** snapshot in November 2025. The working architecture has since expanded substantially. The public repository is now being reconciled to that newer reality with an evidence-first rule: **published claims must be tied to implemented and verified behavior.**
+This repository began as the public **Constitutional Memory v1.4** snapshot in November 2025. The working architecture has since expanded substantially. The public repository is now reconciled to that newer reality with an evidence-first rule: **published claims must be bounded by actual verification, and private runtime state is never dumped into GitHub just to make the repository look current.**
 
 ## What changed
 
@@ -21,6 +21,8 @@ The current architecture includes layers for:
 - failure recovery without silently converting a blocked mechanism into a failed objective
 - multi-machine / specialist-node coordination
 
+See [`ARCHITECTURE.md`](ARCHITECTURE.md) for the current public architecture map and [`AGENTS.md`](AGENTS.md) for the repository execution contract.
+
 ## Current verified state
 
 The public truth model distinguishes **verified subsystem closure** from **whole-system delivery**.
@@ -31,6 +33,8 @@ The public truth model distinguishes **verified subsystem closure** from **whole
 - **Overall organism lifecycle:** `VERIFYING`.
 - **Task 7:** not part of the verified public state.
 - **Delivery status:** not declared.
+
+These status claims describe the verified working architecture. They do **not** imply that every newer private/local implementation file has already been published here. Implementation publication is selective and must pass the public boundary before import.
 
 See [`CURRENT_STATE.md`](CURRENT_STATE.md) for the public status contract.
 
@@ -86,9 +90,9 @@ The previous README advertised npm and PyPI installation commands that are not c
 
 ## Lineage
 
-The November 2025 public repository and the later local implementation lineage were initialized independently. They do not share one clean Git ancestry. The public history is therefore being preserved while newer artifacts are imported selectively with provenance rather than force-merging unrelated histories.
+The November 2025 public repository and the later local implementation lineage were initialized independently. They do not share one clean Git ancestry. The public history is therefore preserved while newer artifacts are imported selectively with provenance rather than force-merging unrelated histories.
 
-See [`LINEAGE.md`](LINEAGE.md).
+See [`LINEAGE.md`](LINEAGE.md) and [`RECONCILIATION.md`](RECONCILIATION.md).
 
 ## License
 
@@ -96,6 +100,6 @@ The repository is licensed under the [MIT License](LICENSE). MIT is permissive o
 
 ---
 
-**Repository role:** public constitutional-memory / autonomous-organism architecture and verified implementation projection  
+**Repository role:** public architecture, status, and selectively published verified implementation  
 **Lifecycle:** `VERIFYING`  
 **Last reconciled:** 2026-08-24
