@@ -1,53 +1,16 @@
-name: Deploy Truth Drop Platform
+name: Production Deploy (disabled pending revalidation)
 
 on:
-  push:
-    branches:
-      - main
-      - master
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
-  deploy-backend:
-    name: Deploy Backend to Railway
+  disabled:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      
-      - name: Setup Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.12'
-      
-      - name: Install Railway CLI
-        run: npm install -g @railway/cli
-      
-      - name: Deploy to Railway
+      - name: Deployment intentionally disabled
         run: |
-          cd backend
-          railway up --service backend
-        env:
-          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
-
-  deploy-frontend:
-    name: Deploy Frontend to Vercel
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-      
-      - name: Install Vercel CLI
-        run: npm install -g vercel
-      
-      - name: Deploy to Vercel
-        run: |
-          cd frontend
-          vercel --prod --token ${{ secrets.VERCEL_TOKEN }}
-        env:
-          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
-
+          echo "Automatic Railway/Vercel production deployment is disabled."
+          echo "Re-enable only after the current public application boundary and deployment targets are explicitly revalidated."
