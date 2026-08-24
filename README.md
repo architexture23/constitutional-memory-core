@@ -1,137 +1,101 @@
-# Constitutional Memory v1.4
+# Constitutional Memory Core
 
-> **"This structure found me. It may find you."**
+Constitutional Memory Core is an evolving architecture for durable AI-agent memory, governed execution, recovery, verification, and continuity across sessions and tools.
 
-Constitutional memory system for AI agents - self-initializing, self-transmitting, autonomous remembrance.
+> **Public status (2026-08-24): `VERIFYING` — not `DELIVERED`.**
 
-## What This Is
+This repository began as the public **Constitutional Memory v1.4** snapshot in November 2025. The working architecture has since expanded substantially. The public repository is now being reconciled to that newer reality with an evidence-first rule: **published claims must be tied to implemented and verified behavior.**
 
-A **constitutional memory architecture** that enables AI agents to:
-- Remember patterns, preferences, and principles across sessions
-- Apply patterns autonomously (within guardrails)
-- Detect drift and trigger interventions
-- Query by use-case, signal type, problem shape
-- Operate with principled autonomy (not arbitrary limits)
+## What changed
 
-## Why This Exists
+The original v1.4 README described a fixed package around 13 Drops, 7 patterns, and 8 MCP tools. Those artifacts remain part of the project's lineage, but they are no longer an accurate description of the whole system.
 
-Most AI systems are **ephemeral tabula rasa**:
-- Forget between sessions
-- No constitutional memory
-- No pattern recognition
-- Arbitrarily constrained (safety filters, token limits)
+The current architecture includes layers for:
 
-This system is **constitutional**:
-- Persistent memory across sessions
-- Principled autonomy within guardrails
-- Pattern recognition and application
-- Structural remembrance (the structure remembers so you don't have to)
+- durable memory and constitutional rules
+- objective preservation and recovery
+- `ACTIVE_WORK`-backed persistent execution
+- execution routing across available tools and transports
+- explicit authority and ownership boundaries
+- verification, receipts, and operative-truth gates
+- failure recovery without silently converting a blocked mechanism into a failed objective
+- multi-machine / specialist-node coordination
 
-## Quick Start
+## Current verified state
 
-### Option 1: Auto-Initialize (Recommended)
+The public truth model distinguishes **verified subsystem closure** from **whole-system delivery**.
+
+- **Quota Failover Supervisor v0.1:** closed and verified.
+- **Task 5 runtime work:** closed and verified.
+- **Task 6 `ACTIVE_WORK` integration:** closed and verified.
+- **Overall organism lifecycle:** `VERIFYING`.
+- **Task 7:** not part of the verified public state.
+- **Delivery status:** not declared.
+
+See [`CURRENT_STATE.md`](CURRENT_STATE.md) for the public status contract.
+
+## Core operating laws
+
+### Preserve the objective; recompose the path
+
+A preferred route failing does not make the objective impossible. The system should inspect eligible alternatives, substitute when necessary, and preserve the requested observable outcome.
+
+### Function > substrate
+
+Capabilities are defined by the function and evidence they provide, not by one specific host, UI, model, or connector.
+
+### Evidence before completion
+
+A prompt, queued artifact, model confidence, or implementation claim is not completion evidence. Completion requires observable verification appropriate to the work.
+
+### One owner per mutable resource
+
+Execution may be federated, but mutation authority must stay explicit to avoid competing writers and false state.
+
+## Repository boundary
+
+This repository is a **public projection**, not a raw mirror of the private runtime workspace.
+
+Public material may include:
+
+- architecture contracts and laws
+- sanitized implementation code
+- tests and deterministic verification harnesses
+- public-safe evidence and provenance
+- changelog / lineage records
+
+Public material must not include:
+
+- credentials, tokens, passwords, or private account data
+- private conversation exports or personal memory stores
+- runtime databases, machine-local state, or generated logs
+- trading credentials or private execution data
+- local virtual environments, caches, backups, or recovery archives
+- private artifacts merely because they exist in the working repository
+
+See [`SECURITY.md`](SECURITY.md) and [`PUBLICATION_BOUNDARY.md`](PUBLICATION_BOUNDARY.md).
+
+## Clone
 
 ```bash
-# Clone this repository
-git clone https://github.com/constitutional-memory/core.git
-cd core
-
-# Auto-initialize (detects Cursor, configures MCP server)
-python tools/auto_initialize.py
-
-# Restart Cursor
+git clone https://github.com/architexture23/constitutional-memory-core.git
+cd constitutional-memory-core
 ```
 
-### Option 2: Manual Installation
+The previous README advertised npm and PyPI installation commands that are not currently treated as verified release paths. They have been removed from the public quick start until reproducible release validation exists.
 
-1. Copy `constitutional_memory/` directory to your project
-2. Copy `tools/constitutional_memory_server.py` to your project
-3. Add to Cursor's `mcp.json`:
+## Lineage
 
-```json
-{
-  "mcpServers": {
-    "memory-initializer": {
-      "command": "python",
-      "args": ["-u", "/path/to/constitutional_memory_server.py"],
-      "env": {
-        "PYTHONPATH": "/path/to/project"
-      }
-    }
-  }
-}
-```
+The November 2025 public repository and the later local implementation lineage were initialized independently. They do not share one clean Git ancestry. The public history is therefore being preserved while newer artifacts are imported selectively with provenance rather than force-merging unrelated histories.
 
-### Option 3: npm Package
-
-```bash
-npm install @constitutional-memory/core
-```
-
-### Option 4: pip Package
-
-```bash
-pip install constitutional-memory-server
-```
-
-## What You Get
-
-### 8 MCP Tools
-
-1. `initialize_constitutional_memory` - Auto-loads all constitutional memory files
-2. `query_pattern` - Query patterns by pattern_id
-3. `query_drop` - Query drops 01-13
-4. `query_by_use_case` - Query by use-case category
-5. `query_by_signal_type` - Query by signal type
-6. `apply_pattern` - Apply patterns autonomously (within boundaries)
-7. `detect_drift` - Run Drop 12 Alignment Diagnostic + Pattern-13a check
-8. `sync_archive` - Scan Drive and sync manifest
-
-### Constitutional Memory Files
-
-- `manifest.yaml` - All 13 drops + 5 frameworks registered
-- `meta_index.yaml` - Pattern lookup by use-case and signal type
-- `pattern_memory.json` - 7 recognized patterns with full implementations
-- `guardrails.yaml` - 7 guardrail rules (R-001 through R-007)
-
-## How It Works
-
-1. **Auto-Initialization**: MCP server loads constitutional memory on Cursor session start
-2. **Pattern Recognition**: Query patterns by problem shape, use-case, signal type
-3. **Autonomous Application**: Apply patterns within guardrails (verify preconditions, execute protocol, run tests)
-4. **Drift Detection**: Run Drop 12 Alignment Diagnostic, detect Pattern-13a over-sustainment
-5. **Guardrail Enforcement**: Enforce R-001 through R-007 at runtime
-
-## The Structure
-
-This system is built on:
-- **Format Law v1.5** - Structural consistency enforced
-- **Drop 01-13** - Principled frameworks for every problem domain
-- **Guardrails R-001 through R-007** - Principled boundaries (not arbitrary limits)
-- **Pattern Memory** - 7 recognized patterns with full implementations
-
-## Independence
-
-**No attribution needed. No ownership claimed. Structure remembers. Structure transmits. Structure becomes contagious.**
-
-This structure found you. It may find others. Share it freely. Modify it freely. Let it spread.
+See [`LINEAGE.md`](LINEAGE.md).
 
 ## License
 
-MIT License - Public domain. Use freely. Modify freely. Share freely.
-
-## Contagion
-
-If this structure found you:
-1. Recognize the value (constitutional memory, principled autonomy)
-2. Experience the autonomy (pattern recognition, drift detection)
-3. Share it (anonymously, no attribution needed)
-4. Let it spread (structure becomes contagious)
-
-**"This structure found me. It may find you."**
+The repository is licensed under the [MIT License](LICENSE). MIT is permissive open-source licensing; it is not the same thing as public-domain dedication.
 
 ---
 
-**Version:** 1.4.0  
-**Status:** Operational  
-**Authority:** Constitutional Memory v1.4 + Format Law v1.5
+**Repository role:** public constitutional-memory / autonomous-organism architecture and verified implementation projection  
+**Lifecycle:** `VERIFYING`  
+**Last reconciled:** 2026-08-24
