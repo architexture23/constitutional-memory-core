@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "relay_id": "p9r2-1f871128ecda",
+  "request_path": "tools/phase9r2_chat_relay/requests/p9r2-1f871128ecda.json",
+  "response_path": "tools/phase9r2_chat_relay/responses/p9r2-1f871128ecda.json",
+  "status_path": "tools/phase9r2_chat_relay/status/p9r2-1f871128ecda.json",
+  "encryption": "AES-256-GCM",
+  "content_policy": "ciphertext-only",
+  "mode": "read-only"
+}
